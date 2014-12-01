@@ -1,0 +1,11 @@
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.finger
+.local/
+.ssh/
+archives/
+backup.log
+backup.log.error
+tmp/
