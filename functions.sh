@@ -76,7 +76,6 @@ tarify()
       cat ${LOG}
    fi
 
-   chown backup:users "${ARCHIVEDIR}${ARCHIVE}.tar"
    rm ${LOG}
    cd ${FROM}
    return ${RET}
