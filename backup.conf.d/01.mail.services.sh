@@ -3,7 +3,7 @@
 export NAME="Mail"
 export ARCHIVE="mail.services"
 
-. /home/backup/functions.sh
+. ../functions.sh
 
 #return 0
 

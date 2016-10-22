@@ -3,7 +3,7 @@
 NAME="Cloud"
 ARCHIVE="cloud"
 
-. /home/backup/functions.sh
+. ../functions.sh
 
 rcopy  "/home/www/cloud.friloux.me" || return 1
 dbcopy "owncloud"                   || return 1
