@@ -1,6 +1,8 @@
 INSTALL
 ======
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/136e9d4cf5aa48868fcd6489e381d73b)](https://www.codacy.com/app/gfriloux/backup?utm_source=github.com&utm_medium=referral&utm_content=gfriloux/backup&utm_campaign=badger)
+
 Create a file named *~/.backup.conf*.
 Inside this file, put something like this :
 ```
