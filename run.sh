@@ -36,7 +36,7 @@ for file in *; do
    RET=$?
 
    END=$(date +%s)
-   TIMEDIFF=$((${END}-${BEGIN}))
+   TIMEDIFF=$((END-BEGIN))
    SIZE=$(filesize ${ARCHIVEDIR}/${ARCHIVE}.tar)
 
    if [ ${RET} -ne 0 ]; then

@@ -83,48 +83,48 @@ tarify()
 
 draw_table_title()
 {
-   COL=$(((${COLS}-4)/$#))
+   COL=$(((COLS-4)/$#))
    COLORS=("${LIGHTCYAN}" "${WHITE}")
 
    COUNT=0
    for ITEM in $*
    do
-      COLITEM=$((${COL}*${COUNT}+5))
+      COLITEM=$((COL*COUNT+5))
       ITEMF="${ITEM:0:1}"
       ITEMR="${ITEM:1}"
 
       echo -en "\033[${COLITEM}G${COLORS[0]}${ITEMF}${COLORS[1]}${ITEMR}${CANCEL}"
-      COUNT=$(($COUNT+1))
+      COUNT=$((COUNT+1))
    done
    echo -e "\033[0G┃\033[${COLS}G┃"
 }
 
 draw_table_line()
 {
-   COL=$(((${COLS}-4)/$#))
+   COL=$(((COLS-4)/$#))
    COLORS=("${LIGHTCYAN}" "${LIGHTGREY}" "${LIGHTGREY}" "${LIGHTGREY}")
 
    COUNT=0
    for ITEM in $*
    do
-      COLITEM=$((${COL}*${COUNT}+5))
+      COLITEM=$((COL*COUNT+5))
       echo -en "\033[${COLITEM}G${COLORS[${COUNT}]}${ITEM}${CANCEL}"
-      COUNT=$(($COUNT+1))
+      COUNT=$((COUNT+1))
    done
    echo -e "\033[0G┃\033[${COLS}G┃"
 }
 
 draw_table_line_error()
 {
-   COL=$(((${COLS}-4)/$#))
+   COL=$(((COLS-4)/$#))
    COLORS=("${LIGHTRED}" "${LIGHTRED}" "${LIGHTRED}" "${LIGHTRED}")
 
    COUNT=0
    for ITEM in $*
    do
-      COLITEM=$((${COL}*${COUNT}+5))
+      COLITEM=$((COL*COUNT+5))
       echo -en "\033[${COLITEM}G${COLORS[${COUNT}]}${ITEM}${CANCEL}"
-      COUNT=$(($COUNT+1))
+      COUNT=$((COUNT+1))
    done
    echo -e "\033[0G┃\033[${COLS}G┃"
 }
