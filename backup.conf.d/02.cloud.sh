@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
-NAME="Cloud"
-ARCHIVE="cloud"
+export NAME="Cloud"
+export ARCHIVE="cloud"
 
 . ../functions.sh
 
