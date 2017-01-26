@@ -5,6 +5,6 @@ export ARCHIVE="pass"
 
 . ../functions.sh
 
-rcopy "/home/www/pass.friloux.me" || return 1
-dbcopy "pass"                     || return 1
-tarify                            || return 1
+rcopy "/usr/share/webapps/passbolt" || return 1
+dbcopy "pass"                       || return 1
+tarify                              || return 1
